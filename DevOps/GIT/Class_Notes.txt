@@ -1701,6 +1701,8 @@ Day - 15 | 4th Nov. 2026
 			git remote remove origin
 			
 			git remote add origin https://github.com/PL-DevOps-Cloud-0930/Remote_Test_Repo1.git
+		- To Push data from local to remote by creating new branch in remote
+			git push -u origin HEAD:newbranchname
 			
 			
 		git rebase  (vs) git pull 
