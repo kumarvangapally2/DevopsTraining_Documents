@@ -202,7 +202,7 @@ Day - 10 | 27th Oct. 2026
 			- It used to just check for the incremental changes in the Remote Repository, if there is any Incremental Changes exist, it will update the details only in the Local Repository. Git fetch will NEVER update the Working Directory
 			
 		- Git Pull:
-			- It used to check for the incremental changes in the Remote Repository, if there is any Incremental Changes exist, it will update the details only in the Local Repository as well as in the Working Directory.
+			- It used to check for the incremental changes in the Remote Repository, if there is any Incremental Changes exist, it will update the details in the Local Repository as well as in the Working Directory.
 				
 				git pull = Git Fetch + Git Merge
 				
@@ -631,7 +631,7 @@ Day - 12 | 30th Oct. 2026
 										# The changes will be taken back to Working Directory as untracked changes.
 		
 			- git rm -f <file1_name>		
-										# Used to Unstage - Remove the changes from staging area as well as from Working Directory.		
+										# Used to Unstage and Delete - Remove the changes from staging area as well as from Working Directory.		
 
 		
 		
@@ -1331,7 +1331,7 @@ Day - 14 | 3rd Nov. 2026
 	
 	How to Handle Merge Conflicts :::
 	
-		- We Never Fix the Merge Conflict prevent the Conflict. 
+		- We Never Fix the Merge Conflict but prevent the Conflict. 
 		
 			- Before Merge, do proper view.
 			
