@@ -19,7 +19,7 @@ Day - 16 | th Nov. 2026
 	
 		- Creation of Artifacts ??
 		
-		Application Program 		--> Written using High Level Langauage -> java/python 
+		Application Program 		--> Written using High Level Language -> java/python, that will be converted to machine language via artifacts.
 		
 		Tools :
 		
