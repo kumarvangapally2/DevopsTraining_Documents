@@ -94,7 +94,7 @@ Day - 23 | 16th Nov. 2026
 	
 	- Infra-Structure Perspective :::
 	
-		- Containers are used to reduce the no. of Virtual Machines. Safe the Infra-Structure Cost.
+		- Containers are used to reduce the no. of Virtual Machines. Save the Infra-Structure Cost.
 		
 		Without Containers :::
 
