@@ -179,6 +179,23 @@ sudo kubeadm config images pull
 
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --ignore-preflight-errors=NumCPU --ignore-preflight-errors=Mem
 
+"root@kmaster-node:~# sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --ignore-preflight-errors=NumCPU --ignore-preflight-errors=Mem
+I1128 03:19:04.921966    4559 version.go:261] remote version is much newer: v1.37.3; falling back to: stable-1.33
+[init] Using Kubernetes version: v1.33.13
+[preflight] Running pre-flight checks
+error execution phase preflight: [preflight] Some fatal errors occurred:
+        [ERROR FileContent--proc-sys-net-ipv4-ip_forward]: /proc/sys/net/ipv4/ip_forward contents are not set to 1
+[preflight] If you know what you are doing, you can make a check non-fatal with `--ignore-preflight-errors=...`
+To see the stack trace of this error execute with --v=5 or higher"
+
+Run the below commands if you see the above error.
+
+echo 'net.ipv4.ip_forward = 1' | sudo tee /etc/sysctl.d/99-kubernetes-forwarding.conf
+sudo sysctl -p /etc/sysctl.d/99-kubernetes-forwarding.conf
+sysctl net.ipv4.ip_forward
+
+Run the above in worker node too if required.
+
 #The initialization may take a few moments to finish. Expect an output similar to the following:
 
 #Your Kubernetes control-plane has initialized successfully!
