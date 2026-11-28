@@ -217,8 +217,8 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 #Then you can join any number of worker nodes by running the following on each as root:
 
-#kubeadm join 102.130.122.60:6443 --token s3v1c6.dgufsxikpbn9kflf \
-        --discovery-token-ca-cert-hash sha256:b8c63b1aba43ba228c9eb63133df81632a07dc780a92ae2bc5ae101ada623e00
+#kubeadm join 172.31.2.205:6443 --token y28mn5.h90smvb2cj92dqo8 \
+        --discovery-token-ca-cert-hash sha256:81cea92c32c09596c55462d8041a016f1931dc3fcb4101c1ea8259179066223f
 
 #You will see a kubeadm join at the end of the output. Copy and save it in some file. We will have to run this command on the worker node to allow it to join the cluster. If you forget to save it, or misplace it, you can also regenerate it using this command:
 
